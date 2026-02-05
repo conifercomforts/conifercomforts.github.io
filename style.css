@@ -1,0 +1,140 @@
+body {
+    background-image: url("./images/thesecond.png");
+    background-color: #fff8dc;
+    background-size: cover;
+    background-position: center;
+    background-blend-mode: color-burn;
+    font-family: serif;
+    color: burlywood;
+    width: 600px;
+    margin: 0 auto; /*first value affects top and bottom sides, secong value affects left and right sides. "auto" is a special value that divides the available horizontal space evently between left and right (or top and bottom!)*/
+    padding: 0 20px 20px 20px;
+}
+ul {
+  list-style-position: inside; /* Moves bullets into the content flow */
+}
+li {
+    display: flex;
+    align-items: center;
+    margin: 10px 0;
+    color: darkslategrey;
+
+    line-height: 30px;
+
+    list-style: none;
+}
+li::before {
+    display: block;
+    flex-shrink: 0;
+    width: 33px;
+    height: 33px;
+    margin-right: 10px;
+
+    background: url('./images/mini.png') no-repeat left center;
+    background-size: contain;
+
+    content: '';
+}
+h1 {
+    margin: 0;
+    padding: 20px 0;
+    color: coral;
+    text-shadow: 3px 3px 1px cornflowerblue; /*first value sets horizontal offest, second is vertical offset, third is blur radius (higher is fuzzier), forth is base color of shadow*/
+    text-align: center;
+    border-bottom: 2pt solid crimson;
+    font-family: Llawysgrifen;
+    font-optical-sizing: auto;
+    font-weight: 700;
+    font-style: normal;
+}
+h2 {
+    color: coral;
+    text-align: center;
+    text-shadow: 1px 1px 5px cornflowerblue;
+}
+footer {
+    text-align: center;
+    border-top: 2pt solid crimson;
+    padding: 5pt;
+}
+img {
+    display: block; /*IMG elements are inline elements: by default they don't accept margin values the same way block elements do. In order to utilize the auto margin centering trick, we assign it block-level behavior with "display: block;"*/
+    margin: 0 auto;
+    max-width: 100%;
+    width: 250px;
+    height: 300px;
+    border: 2px solid crimson;
+    object-fit: cover;
+}
+.scale-down {
+    object-fit: scale-down;
+}
+.boxed-section {
+    border: 2px solid cornflowerblue;
+    border-style: dotted;
+    padding: 20px; /*on all sides*/
+    margin: 0  auto; /*first on top and bottom, second on left and right*/
+    border-radius: 8px; /*round those corners baybeyyy*/
+    width: 80%; /*makes box only take up 80% of its container's width*/
+
+    background-color: rgba(255, 255, 255, 0.5);
+    opacity: 1;
+    z-index: -1;
+
+    box-sizing: border-box;
+}
+.dogwiggle img {
+    transition-duration: .3s;
+    transform: scale(1,1);
+    border: none;
+    object-fit: contain;
+}
+.dogwiggle img:hover {
+    animation: shake .5s;
+    animation-iteration-count: 1;
+    transform: scale(1.1,1.1);
+    transition: .5s;
+}
+@keyframes shake {
+    25% { transform: rotate(1deg) scale(1.1,1.1);}
+    50% { transform: rotate(-1deg) scale(1.1,1.1);}
+    75% { transform: rotate(1deg) scale(1.1,1.1);}
+    100% { transform: rotate(-1deg) scale(1.1,1.1);}
+}
+/**
+ * @license
+ * MyFonts Webfont Build ID 3867246, 2020-12-16T11:57:38-0500
+ * 
+ * The fonts listed in this notice are subject to the End User License
+ * Agreement(s) entered into by the website owner. All other parties are 
+ * explicitly restricted from using the Licensed Webfonts(s).
+ * 
+ * You may obtain a valid license at the URLs below.
+ * 
+ * Webfont: Llawysgrifen by Evermore Type
+ * URL: https://www.myfonts.com/collections/evermore-type-foundry
+ 
+ * © 2026 MyFonts Inc. */
+
+
+  
+@font-face {
+  font-family: "Llawysgrifen";
+  src: url('./fonts/Llawysgrifen/font.woff2') format('woff2'), url('./fonts/Llawysgrifen/font.woff') format('woff');
+}
+.Llawysgrifen {
+    font-family: Llawysgrifen;
+}
+
+.ceramicsheader {
+    width: 15em;
+    border: 2px solid cornsilk;
+    border-radius: 8px;
+    box-shadow: 8px 8px 10px cornflowerblue;
+    padding: 8px 12px;
+    margin: 0 auto;
+    text-align: center;
+    
+    background-color: cornsilk;
+    background-image: repeating-linear-gradient(45deg, rgba(100,149,237,0.5), rgba(47,79,79,1) 7%, rgba(47,79,79,0) 10%);
+}
