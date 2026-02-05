@@ -1,5 +1,5 @@
 body {
-    background-image: url("./images/thesecond.png");
+    background-image: url("/images/thesecond.png");
     background-color: #fff8dc;
     background-size: cover;
     background-position: center;
@@ -30,7 +30,7 @@ li::before {
     height: 33px;
     margin-right: 10px;
 
-    background: url('./images/mini.png') no-repeat left center;
+    background: url('/images/mini.png') no-repeat left center;
     background-size: contain;
 
     content: '';
@@ -120,7 +120,7 @@ img {
   
 @font-face {
   font-family: "Llawysgrifen";
-  src: url('./fonts/Llawysgrifen/font.woff2') format('woff2'), url('./fonts/Llawysgrifen/font.woff') format('woff');
+  src: url('/fonts/Llawysgrifen/font.woff2') format('woff2'), url('/fonts/Llawysgrifen/font.woff') format('woff');
 }
 .Llawysgrifen {
     font-family: Llawysgrifen;
@@ -138,3 +138,4 @@ img {
     background-color: cornsilk;
     background-image: repeating-linear-gradient(45deg, rgba(100,149,237,0.5), rgba(47,79,79,1) 7%, rgba(47,79,79,0) 10%);
 }
+
