@@ -2,10 +2,10 @@ const myImage = document.querySelector("img");
 
 myImage.addEventListener("click", () => {
   const mySrc = myImage.getAttribute("src");
-  if (mySrc === "./images/small_2k_sd.png") {
-    myImage.setAttribute("src", "./images/big_hd_4k.png");
+  if (mySrc === "/images/small_2k_sd.png") {
+    myImage.setAttribute("src", "/images/big_hd_4k.png");
   } else {
-    myImage.setAttribute("src", "./images/small_2k_sd.png");
+    myImage.setAttribute("src", "/images/small_2k_sd.png");
   }
 });
 
@@ -45,4 +45,5 @@ When clicked, setUserName() runs */
 myButton.addEventListener("click", () => {
   setUserName();
 });
+
 
