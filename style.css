@@ -47,6 +47,9 @@ h1 {
     font-weight: 700;
     font-style: normal;
 }
+.fixed-header {
+    position: fixed;
+}
 h2 {
     color: coral;
     text-align: center;
