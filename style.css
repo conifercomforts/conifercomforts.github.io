@@ -1,5 +1,15 @@
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
 body {
-    background-image: url("/images/bg_cropped.png");
+    background-image: url("./images/bg_cropped.png");
     background-color: #fff8dc;
     background-size: cover;
     background-position: center;
